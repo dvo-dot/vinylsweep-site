@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — VinylSweep</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">VinylSweep</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 10 August 2026</p>
+  </div>
+</header>
+
+<div class="wrap">
+<nav class="crumbs"><a href="index.html">← Home</a><a href="terms.html">Terms of Service</a></nav>
+
+<div class="callout">
+  <p>VinylSweep has no accounts, no logins, and no advertising. We do not track you, we do not build a profile of you, and we do not sell or share your data with anyone. Your record collection lives on your phone.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>VinylSweep ("the app") is an iOS application operated by Berkan Köksal ("we", "us"). This policy explains what the app does with information when you use it. It covers the app itself and the VinylSweep server that supports it.</p>
+
+<h2>2. What stays on your device</h2>
+<p>The following never leaves your phone. It is stored locally by the app and is not transmitted to us or to anyone else:</p>
+<ul>
+  <li>Your collection — records marked as owned or added to your wantlist</li>
+  <li>Saved shelf sweeps and scan history, including their captured images</li>
+  <li>Store price notes you enter</li>
+  <li>App settings, such as your display currency</li>
+</ul>
+<p>Deleting the app removes all of this permanently. We hold no copy, so we cannot restore it for you.</p>
+
+<h2>3. Camera</h2>
+<p>VinylSweep needs camera access to identify records. The camera is active only while you are on a scanning screen. Frames are captured for recognition and, if you save a sweep, stored locally on your device as described above. The app does not access your photo library and does not record audio or video.</p>
+
+<h2>4. What is sent to servers, and why</h2>
+<p>To identify a record and estimate its value, some information must leave your device. It is sent through the VinylSweep proxy server, which exists specifically so that credentials for third-party services are never shipped inside the app.</p>
+
+<table>
+  <tr><th>What is sent</th><th>Where it goes</th><th>Why</th></tr>
+  <tr>
+    <td>Photographs of record sleeves</td>
+    <td>VinylSweep proxy → Google Gemini API</td>
+    <td>To recognise which records appear in the image. The proxy forwards the image and returns the result; it does not save the image afterwards.</td>
+  </tr>
+  <tr>
+    <td>Artist, title and release search terms</td>
+    <td>VinylSweep proxy → Discogs API</td>
+    <td>To look up release details and marketplace pricing.</td>
+  </tr>
+  <tr>
+    <td>An Apple App Attest token</td>
+    <td>VinylSweep proxy</td>
+    <td>To confirm the request comes from a genuine, unmodified copy of the app, and to count usage against fair-use limits. This is a cryptographic device key issued by Apple. It is not linked to your name, your Apple Account, or your device's advertising identifier, and it cannot be used to identify you.</td>
+  </tr>
+  <tr>
+    <td>An anonymous subscription ID</td>
+    <td>RevenueCat</td>
+    <td>To check whether you have an active subscription. The ID is randomly generated on first launch and is not tied to your identity.</td>
+  </tr>
+</table>
+
+<h3>Retention</h3>
+<p>Sleeve images are held only in memory for the duration of the request and are discarded once recognition returns. We do not operate an image archive. The proxy keeps usage counters (how many scans a device key has made in the current day and month) so that fair-use limits can be enforced; these counters contain no personal information and no scan content.</p>
+
+<h2>5. Third-party services</h2>
+<p>The following processors receive data as described above. Each handles it under its own privacy policy:</p>
+<ul>
+  <li><strong>Google</strong> (Gemini API) — image recognition</li>
+  <li><strong>Discogs</strong> — release metadata and marketplace pricing</li>
+  <li><strong>RevenueCat</strong> — subscription status</li>
+  <li><strong>Cloudflare</strong> — hosting for the VinylSweep proxy</li>
+  <li><strong>Apple</strong> — App Store distribution, in-app purchases, App Attest</li>
+</ul>
+<p>VinylSweep is not affiliated with, endorsed by, or sponsored by Discogs.</p>
+
+<h2>6. Payments</h2>
+<p>Subscriptions are sold and billed by Apple through the App Store. Apple does not share your payment card, billing address, or Apple Account details with us, and we never see them. We receive only whether a subscription is currently active.</p>
+
+<h2>7. Tracking and analytics</h2>
+<p>The app contains no advertising SDKs, no third-party analytics, and no cross-app or cross-site tracking. It does not use the Advertising Identifier and does not request App Tracking Transparency permission, because there is nothing to track. This is declared in the app's privacy manifest, which you can verify on the App Store listing.</p>
+
+<h2>8. Children</h2>
+<p>VinylSweep is not directed at children under 13 and we do not knowingly collect information from them.</p>
+
+<h2>9. Your choices</h2>
+<ul>
+  <li><strong>Camera</strong> — revoke access at any time in iOS Settings → Privacy &amp; Security → Camera. Scanning will stop working; the rest of the app continues to function.</li>
+  <li><strong>Your data</strong> — deleting the app erases everything stored locally.</li>
+  <li><strong>Subscriptions</strong> — manage or cancel in the App Store, or from the Settings screen inside the app.</li>
+  <li><strong>Questions or requests</strong> — write to us at the address below. Because we hold no account and no personal profile, there is generally nothing for us to retrieve, correct, or erase on request, but we are glad to explain what the app does in any specific case.</li>
+</ul>
+
+<h2>10. Changes</h2>
+<p>If this policy changes materially, we will update the effective date above and publish the revised version at this address before the change takes effect.</p>
+
+<h2>11. Contact</h2>
+<p>Questions about this policy: <a href="mailto:koeksal.berkan@gmail.com">koeksal.berkan@gmail.com</a></p>
+
+<footer>
+  <p>VinylSweep · <a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></p>
+</footer>
+</div>
+</body>
+</html>
