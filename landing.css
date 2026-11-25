@@ -185,7 +185,7 @@ section { padding: clamp(64px, 9vw, 120px) 0; }
 /* Features */
 .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 64px) clamp(32px, 6vw, 88px); }
 .feature .label { color: var(--yellow); margin-bottom: 10px; }
-.feature-tall { grid-row: span 3; }
+.feature-col { display: flex; flex-direction: column; gap: clamp(40px, 6vw, 72px); }
 .feature p { margin: 12px 0 0; color: var(--ink-dim); max-width: 30em; }
 .pair { display: flex; gap: 16px; margin-top: 26px; align-items: flex-end; }
 .pair figure { margin: 0; width: 34%; }
@@ -194,6 +194,17 @@ section { padding: clamp(64px, 9vw, 120px) 0; }
 .pair figcaption { font-family: var(--data); font-weight: 700; font-size: 20px; margin-top: 8px; color: var(--ink); }
 .pair figure:first-child figcaption { color: var(--yellow); }
 .pair figcaption small { display: block; font-size: 10px; letter-spacing: 0.16em; color: var(--outline); text-transform: uppercase; }
+
+/* Listen first */
+.listen { padding-top: 0; }
+.listen-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.listen .label { color: var(--yellow); margin-bottom: 14px; }
+.listen p { color: var(--ink-dim); max-width: 30em; margin: 16px 0 0; }
+.listen p.small { font-size: 15px; color: var(--outline); }
+.listen-shot { margin: 0; background: var(--low); padding: clamp(18px, 3vw, 32px); border-radius: 6px; }
+.listen-shot .shot { box-shadow: none; }
+.listen-shot figcaption { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; font-family: var(--data); font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--outline); }
+.listen-shot figcaption b { display: inline-block; min-width: 4.5em; color: var(--yellow); }
 
 /* Price */
 .price { background: var(--low); }
@@ -222,10 +233,9 @@ footer p { margin: 0; max-width: 46em; }
   h1 { font-size: clamp(56px, 15vw, 104px); }
   .verdicts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .verdict { min-height: 150px; }
-  .steps, .features, .price-grid, .fine-grid { grid-template-columns: minmax(0, 1fr); }
+  .steps, .features, .price-grid, .fine-grid, .listen-grid { grid-template-columns: minmax(0, 1fr); }
   .steps { gap: 12px; }
   .step .shot { max-width: 340px; }
-  .feature-tall { grid-row: auto; }
   .hero-phone { justify-self: center; max-width: 250px; margin: 48px 0 0; }
   .bar nav a:not(.keep) { display: none; }
   .big-sticker { max-width: 88%; margin-left: 2%; }
