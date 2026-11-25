@@ -133,6 +133,10 @@ h3 { font-weight: 800; font-size: 26px; line-height: 1.1; letter-spacing: -0.02e
 .sticker small { display: block; font-family: var(--data); font-weight: 700; font-size: clamp(11px, 1.3vw, 15px); letter-spacing: 0.18em; color: var(--on-yellow); }
 .sticker b { display: block; font-family: var(--data); font-weight: 700; font-size: clamp(40px, 5.6vw, 66px); line-height: 1; color: var(--bg); margin-top: 3px; }
 
+/* Release-day hero: the app on Apple's iPhone bezel, upright and whole. */
+.hero-phone { justify-self: center; width: 100%; max-width: 300px; margin: 8px 0 0; }
+.hero-phone img { width: 100%; height: auto; filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.6)); }
+
 /* Verdicts */
 .verdicts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .verdict { padding: clamp(22px, 3vw, 40px) clamp(18px, 2.4vw, 32px) clamp(24px, 3vw, 44px); min-height: 190px; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
@@ -152,14 +156,37 @@ section { padding: clamp(64px, 9vw, 120px) 0; }
 .step { background: var(--low); padding: 30px 28px 34px; counter-increment: step; }
 .step::before { content: '0' counter(step); font-family: var(--data); font-weight: 700; font-size: 13px; letter-spacing: 0.2em; color: var(--yellow); }
 .step h3 { margin: 14px 0 10px; }
+.step { display: flex; flex-direction: column; }
+.step .shot { order: -1; margin: 0 0 22px; }
+
+/* Real app screens. Shown as they are, no drawn phone around them. */
+.shot {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: var(--bg);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+/* The list screen has the page's own background, so it sits on a lighter
+   panel to show where the phone screen is. It fades out at the bottom:
+   the list goes on past what is shown. */
+.shot-panel {
+  max-width: 440px;
+  margin-top: 26px;
+  padding: 24px 24px 0;
+  background: var(--low);
+  border-radius: 6px;
+  -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 80%, transparent 100%);
+}
+.shot-panel .shot { box-shadow: none; }
 .step p { margin: 0; color: var(--ink-dim); font-size: 16px; }
 
 /* Features */
 .features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 5vw, 64px) clamp(32px, 6vw, 88px); }
 .feature .label { color: var(--yellow); margin-bottom: 10px; }
+.feature-tall { grid-row: span 3; }
 .feature p { margin: 12px 0 0; color: var(--ink-dim); max-width: 30em; }
-.crate-row { display: flex; margin-top: 26px; }
-.crate-row img { width: 22%; aspect-ratio: 1 / 1; object-fit: cover; margin-right: -4%; box-shadow: -8px 0 20px rgba(0, 0, 0, 0.45); }
 .pair { display: flex; gap: 16px; margin-top: 26px; align-items: flex-end; }
 .pair figure { margin: 0; width: 34%; }
 .pair img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
@@ -196,6 +223,10 @@ footer p { margin: 0; max-width: 46em; }
   .verdicts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .verdict { min-height: 150px; }
   .steps, .features, .price-grid, .fine-grid { grid-template-columns: minmax(0, 1fr); }
+  .steps { gap: 12px; }
+  .step .shot { max-width: 340px; }
+  .feature-tall { grid-row: auto; }
+  .hero-phone { justify-self: center; max-width: 250px; margin: 48px 0 0; }
   .bar nav a:not(.keep) { display: none; }
   .big-sticker { max-width: 88%; margin-left: 2%; }
 }
