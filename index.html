@@ -3,35 +3,143 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VinylSweep</title>
-<link rel="stylesheet" href="style.css">
+<title>VinylSweep: is that record a good price?</title>
+<meta name="description" content="Scan a record in the shop, type in its price, and VinylSweep tells you if that is a good price. For iPhone. Your first 3 scans are free.">
+<meta name="apple-itunes-app" content="app-id=6803561521">
+<meta property="og:title" content="VinylSweep: is this a good price?">
+<meta property="og:description" content="Scan the record, type in the price, get the answer. For iPhone. Your first 3 scans are free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dvo-dot.github.io/vinylsweep-site/">
+<meta property="og:image" content="https://dvo-dot.github.io/vinylsweep-site/img/link-preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="img/brand-mark.svg">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
-<header>
+
+<div class="hero">
   <div class="wrap">
-    <p class="eyebrow">Know what it's worth before you buy it</p>
-    <h1>VinylSweep</h1>
-    <p class="meta">iOS · Vinyl record scanner and price check</p>
+    <header class="bar">
+      <a class="brand" href="./"><img src="img/brand-mark.svg" alt=""><span>VINYLSWEEP</span></a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#price">Price</a>
+        <a href="#support" class="keep">Support</a>
+      </nav>
+    </header>
+
+    <div class="hero-grid">
+      <div>
+        <h1>Is this a <span class="y">good price?</span></h1>
+        <p class="lede">You are in a record shop and the sticker says $34.99. Scan the record, type in the price, and VinylSweep tells you if it is worth it. Before you pay.</p>
+        <!-- PRE-LAUNCH: the store link answers "not found" until 1.0 is released.
+             On release day, put back the <a class="cta" href="https://apps.apple.com/app/id6803561521">
+             with the download icon and "Get it on the App Store", here and in the price section. -->
+        <div class="cta soon">On the App Store · Friday 27 November</div>
+        <p class="label under-cta">iPhone · iOS 26 or later · First 3 scans free</p>
+      </div>
+      <div class="sleeve-stage" aria-hidden="true">
+        <div class="disc"></div>
+        <img class="cover" src="img/sleeve-cosmic-pulse.jpg" alt="" width="720" height="720">
+        <div class="sticker"><small>USED · VG+</small><b>$34.99</b></div>
+      </div>
+    </div>
   </div>
-</header>
+</div>
 
-<div class="wrap">
-<p>Point your camera at a crate. VinylSweep identifies the records, checks what they actually sell for, and tells you whether the price on the sticker is a steal or a skip — before you get to the counter.</p>
+<div class="verdicts" aria-label="The four answers">
+  <div class="verdict v-steal"><b>STEAL</b><span>Much cheaper than online</span></div>
+  <div class="verdict v-good"><b>GOOD DEAL</b><span>Cheaper than online</span></div>
+  <div class="verdict v-fair"><b>FAIR PRICE</b><span>About the same as online</span></div>
+  <div class="verdict v-skip"><b>SKIP</b><span>More expensive than online</span></div>
+</div>
 
-<h2>Legal</h2>
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-  <li><a href="impressum.html">Impressum</a></li>
-</ul>
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label">How it works</p>
+      <h2>Three steps. <span class="y">A few seconds.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Scan the record.</h3><p>Point your iPhone camera at the cover. It works without a barcode, and you do not have to type any names.</p></div>
+      <div class="step"><h3>Type in the price.</h3><p>Enter what the shop wants. VinylSweep compares it with the cheapest offer online for that same record.</p></div>
+      <div class="step"><h3>Get the answer.</h3><p>One word: Steal, Good Deal, Fair Price or Skip. The numbers are right below it. Then buy it or put it back.</p></div>
+    </div>
+  </div>
+</section>
 
-<h2>Support</h2>
-<p>Questions, bugs, or subscription trouble: <a href="mailto:koeksal.berkan@gmail.com">koeksal.berkan@gmail.com</a></p>
-<p>If you are reporting a problem, open <strong>Settings</strong> in the app and tap the version number at the bottom — it copies your build and support ID. Paste that into your message.</p>
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="features">
+      <div class="feature">
+        <p class="label">Live Sweep</p>
+        <h2>Scan a whole crate at once.</h2>
+        <p>Flip through the records and tap once for each one. Up to 8 records per scan. You see what each one costs online.</p>
+        <div class="crate-row" aria-hidden="true">
+          <img src="img/sleeve-cosmic-pulse.jpg" alt="" loading="lazy" width="720" height="720">
+          <img src="img/sleeve-orbital-groove.jpg" alt="" loading="lazy" width="720" height="720">
+          <img src="img/sleeve-sonic-strata.jpg" alt="" loading="lazy" width="720" height="720">
+          <img src="img/sleeve-nebula-drift.jpg" alt="" loading="lazy" width="720" height="720">
+          <img src="img/sleeve-tape-loops.jpg" alt="" loading="lazy" width="720" height="720">
+        </div>
+      </div>
+      <div class="feature">
+        <p class="label">Old copy or new copy?</p>
+        <h2>Same album. Different price.</h2>
+        <p>An original from 1978 is worth more than a reissue from 2019. VinylSweep works out which one you are holding.</p>
+        <div class="pair" aria-hidden="true">
+          <figure><img src="img/sleeve-orbital-groove.jpg" alt="" loading="lazy" width="720" height="720"><figcaption><small>1978 original</small>$75.00</figcaption></figure>
+          <figure><img src="img/sleeve-orbital-groove.jpg" alt="" loading="lazy" width="720" height="720"><figcaption><small>2019 reissue</small>$24.50</figcaption></figure>
+        </div>
+      </div>
+      <div class="feature">
+        <p class="label">Your collection</p>
+        <h3>Keep what you find.</h3>
+        <p>Save the records you own and the ones you are looking for. VinylSweep tells you when it spots one from your list, and adds up what your collection is worth.</p>
+      </div>
+      <div class="feature">
+        <p class="label">Listen first</p>
+        <h3>Hear it before you buy.</h3>
+        <p>Play a short sample of a song, when one is available for the record.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="wrap price-grid">
+    <div class="big-sticker" aria-hidden="true"><small>Your first 3 scans</small><b>FREE</b></div>
+    <div>
+      <p class="label" style="color:var(--yellow);margin-bottom:14px">What it costs</p>
+      <h2>Free to try. <span class="y">Pro if you use it a lot.</span></h2>
+      <p>VinylSweep is free to download, and your first 3 scans are free. Each scan checks up to 8 records. Scanning a barcode and searching by name stay free after that.</p>
+      <p>With VinylSweep Pro you can scan as much as you want: $3.99 a month, or $24.99 a year with the first week free. Prices vary by country.</p>
+      <div class="cta soon">On the App Store · Friday 27 November</div>
+    </div>
+  </div>
+</section>
+
+<div class="fine">
+  <div class="wrap fine-grid">
+    <div>
+      <h3>Where the prices come from</h3>
+      <p>The online price is the cheapest offer for that record on the Discogs marketplace right now, plus estimated shipping to your region. It is an estimate, not what the record last sold for. Covers and prices on this page are examples.</p>
+      <p>This application uses Discogs' API but is not affiliated with, sponsored or endorsed by Discogs. "Discogs" is a trademark of Zink Media, LLC.</p>
+    </div>
+    <div id="support">
+      <h3>Support</h3>
+      <p>Questions, bugs or subscription trouble: <a href="mailto:koeksal.berkan@gmail.com">koeksal.berkan@gmail.com</a></p>
+      <p>If you are reporting a problem, open <strong>Settings</strong> in the app and tap the version number at the bottom. It copies your build and support ID. Paste that into your message.</p>
+    </div>
+  </div>
+</div>
 
 <footer>
-  <p>VinylSweep is not affiliated with or endorsed by Discogs. · <a href="impressum.html">Impressum</a></p>
+  <div class="wrap">
+    <p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="impressum.html">Impressum</a></p>
+    <p>© 2026 Berkan Köksal</p>
+  </div>
 </footer>
-</div>
+
 </body>
 </html>

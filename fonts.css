@@ -1,0 +1,10 @@
+/* The app's own typefaces, served from this site. Nothing is loaded from
+   Google Fonts, so no visitor's address goes to a third party. */
+@font-face { font-family: 'Epilogue'; font-weight: 700; font-display: swap; src: url('fonts/Epilogue-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Epilogue'; font-weight: 800; font-display: swap; src: url('fonts/Epilogue-ExtraBold.woff2') format('woff2'); }
+@font-face { font-family: 'Epilogue'; font-weight: 900; font-display: swap; src: url('fonts/Epilogue-Black.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-display: swap; src: url('fonts/Inter-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; font-display: swap; src: url('fonts/Inter-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 600; font-display: swap; src: url('fonts/Inter-SemiBold.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; font-display: swap; src: url('fonts/SpaceGrotesk-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; font-display: swap; src: url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'); }
